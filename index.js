@@ -1,5 +1,4 @@
+/* global hexo */
 'use strict';
-let generator = require('./lib/generator');
-hexo.extend.generator.register('restful_api', function (site) {
-  return generator(hexo, site);
-});
+const generator = require('./lib/generator');
+hexo.extend.generator.register('restful_api', site => generator(hexo, site));
