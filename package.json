@@ -1,0 +1,32 @@
+{
+  "name": "hexo-generator-apis",
+  "version": "0.0.1",
+  "description": "Generate restful json data for Hexo plugins.",
+  "main": "index.js",
+  "keywords": [
+    "hexo",
+    "restful",
+    "json",
+    "generator",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmqy/hexo-generator-xapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bmqy/hexo-generator-xapi/issues"
+  },
+  "author": "wherewhere",
+  "contributors": [
+    "wherewhere"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "hexo-pagination": "^0.1.0",
+    "nunjucks": "^3.0.0",
+    "object.pick": "^1.0.0"
+  },
+  "bundleDependencies": [],
+  "deprecated": false
+}
