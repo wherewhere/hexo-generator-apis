@@ -26,7 +26,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "object.pick": "^1.0.0"
   },
   "bundleDependencies": [],
   "deprecated": false
