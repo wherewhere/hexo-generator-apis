@@ -26,6 +26,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "html-to-text": "^9.0.5"
   },
   "bundleDependencies": [],
   "deprecated": false
