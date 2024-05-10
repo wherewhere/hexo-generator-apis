@@ -26,7 +26,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "hexo-pagination": "^0.1.0",
     "object.pick": "^1.0.0"
   },
   "bundleDependencies": [],
