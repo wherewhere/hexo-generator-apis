@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-apis",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Generate restful json data for Hexo plugins.",
   "main": "index.js",
   "keywords": [

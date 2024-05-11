@@ -71,7 +71,7 @@ restful_xapi:         # hexo.config mix theme.config
     cover: true           # 是否生成封面图
     excerpt: false        # 是否生成摘要
     content: true         # 是否生成内容
-  openapi: true         # 是否生成 OpenAPI 3.0 描述文件
+  openapi:              # OpenAPI 3.0 描述文件
     enable: true          # 默认开启
     info:                 # OpenAPI 3.0 信息
       title:                # API 标题
