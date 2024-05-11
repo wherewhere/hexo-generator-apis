@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-apis",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Generate restful json data for Hexo plugins.",
   "main": "index.js",
   "keywords": [
@@ -10,13 +10,11 @@
     "generator",
     "api"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wherewhere/hexo-generator-apis.git"
-  },
+  "homepage": "https://github.com/wherewhere",
   "bugs": {
     "url": "https://github.com/wherewhere/hexo-generator-apis/issues"
   },
+  "license": "MIT",
   "author": "wherewhere7",
   "contributors": [
     "yusen",
@@ -24,10 +22,21 @@
     "bmqy",
     "wherewhere"
   ],
-  "license": "MIT",
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/wherewhere"
+    },
+    {
+      "type": "爱发电",
+      "url": "http://afdian.net/@wherewhere"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wherewhere/hexo-generator-apis.git"
+  },
   "dependencies": {
     "html-to-text": "^9.0.5"
-  },
-  "bundleDependencies": [],
-  "deprecated": false
+  }
 }
