@@ -72,6 +72,29 @@ restful_xapi:         # hexo.config mix theme.config
     cover: true           # 是否生成封面图
     excerpt: false        # 是否生成摘要
     content: true         # 是否生成内容
+  openapi: true         # 是否生成 OpenAPI 3.0 描述文件
+    enable: true          # 默认开启
+    info:                 # OpenAPI 3.0 信息
+      title:                # API 标题
+      description:          # API 描述
+      termsOfService:       # 服务条款
+      contact:              # 联系方式
+        name:                 # 联系人
+        url:                  # 联系地址
+        email:                # 联系邮箱
+      license:              # 许可证
+        name:                 # 许可证名称
+        url:                  # 许可证地址
+      version: "1.0.0"      # API 版本
+    externalDocs:         # OpenAPI 3.0 外部文档
+      description:          # 外部文档描述
+      url:                  # 外部文档地址
+    servers:              # OpenAPI 3.0 服务器
+      - url:                # API 服务器地址
+        description:        # API 服务器描述
+    tags:                 # OpenAPI 3.0 标签
+      - name:               # 标签名称
+        description:        # 标签描述
 ```
 
 ## Document
@@ -100,3 +123,4 @@ Get | `/api/archives/{year}/{month}/{day}.json` | 获取指定年份、月份和
 Get | `/api/archives/{year}/{month}/{day}/page.{index}.json` | 获取指定年份、月份和日期的文章列表分页数据
 Get | `/api/swiper.json` | 获取指定的列表别名的文章列表, eg: `['web', 'hexo', 'java']` 数组中的字符为指定文章的别名，功能主要用于微信小程序轮播图文章的指定动态配置
 Get | `/api/search.json` | 获取全部文档，用于本地全局搜索
+Get | `/api/openapi.json` | 获取 OpenAPI 3.0 描述文件
