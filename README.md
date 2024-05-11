@@ -60,7 +60,6 @@ restful_xapi:         # hexo.config mix theme.config
     archive_generator:    # 默认为 hexo-generator-archive 设置
       enable: true          # hexo-generator-archive 安装则开启
       per_page: 10          # 每页显示的文章数量
-      yearly: true          # 是否生成年归档
       monthly: true         # 是否生成月归档
       daily: false          # 是否生成日归档
       order_by: -date       # 排序方式
