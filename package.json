@@ -8,7 +8,8 @@
     "restful",
     "json",
     "generator",
-    "api"
+    "api",
+    "openapi"
   ],
   "homepage": "https://github.com/wherewhere",
   "bugs": {

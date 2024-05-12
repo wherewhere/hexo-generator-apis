@@ -9,95 +9,94 @@ Generate restful json data for Hexo plugins. Based on [hexo-generator-xapi](http
 魔法薇ㄦ的书馆 OpenAPI 描述文件 [openapi.json](https://wherewhere.github.io/api/openapi.json)，可前往 [Swagger UI](https://petstore.swagger.io) 在线解析
 
 ## Install
-
 ```sh
 npm install hexo-generator-apis --save
 ```
 
-## 配置 hexo 文件下的 `_config.yml`
-
+## Configuration
 **加入以下默认配置, 属性值为 `false` 表示不生成**
 
 ```yml
-restful_xapi:         # 
-  enable: true          # 默认开启
-  site: [               # hexo.config mix theme.config
-      "title",          # site 可配置为数组选择性生成某些属性
-      "subtitle",       # site: ['title', 'subtitle', 'description', 'author', 'since', email', 'favicon', 'avatar']
-      "description",    # site: true
+# API Generator
+restful_xapi:           # RESTful API 配置 
+  enable: true            # 默认开启
+  site: [                 # hexo.config mix theme.config
+      "title",            # site 可配置为数组选择性生成某些属性
+      "subtitle",         # site: ['title', 'subtitle', 'description', 'author', 'since', email', 'favicon', 'avatar']
+      "description",      # site: true
       "author",
       "language",
       "timezone",
       "url",
       "keywords"
     ]
-  posts_props:          # 文章列表项的需要生成的属性
-    title: true           # 文章标题
-    date: true            # 发布日期
-    updated: true         # 更新日期
-    comments: true        # 是否允许评论
-    url: true             # 文章链接
-    excerpt: true         # 文章摘要
-    keywords: false       # 关键字
-    cover: true           # 封面图
-    content: false        # 文章内容
-    raw: false            # 原始内容
-    categories: true      # 分类
-    tags: true            # 标签
-  categories:           # 分类数据
-    enable: true          # 默认开启
-    category_generator:   # 默认为 hexo-generator-category 设置
-      per_page: 10          # 每页显示的文章数量
-      order_by: -date       # 排序方式
-  tags: true            # 标签数据
-    enable: true          # 默认开启
-    tag_generator:        # 默认为 hexo-generator-tag 设置
-      per_page: 10          # 每页显示的文章数量
-      order_by: -date       # 排序方式
-  posts:                 # 文章数据
-    enable: true          # 默认开启
-    index_generator:      # 默认为 hexo-generator-index 设置
-      enable: true          # hexo-generator-index 安装则开启
-      per_page: 10          # 每页显示的文章数量
-      order_by: "-date"     # 排序方式
-    archive_generator:    # 默认为 hexo-generator-archive 设置
-      enable: true          # hexo-generator-archive 安装则开启
-      per_page: 10          # 每页显示的文章数量
-      monthly: true         # 是否生成月归档
-      daily: false          # 是否生成日归档
-      order_by: -date       # 排序方式
-  pages: true           # 额外的 Hexo 页面数据, 如 About
-  swipers_list: []      # 生成指定的页面信息,填写你文章文件夹名称比如['css','js']，不加后缀名,主要用于轮播图api
-  search_all:           # 全局搜索
-    enable: true          # 默认开启
-    path: api/search.json # 默认路径
-    cover: true           # 是否生成封面图
-    excerpt: false        # 是否生成摘要
-    content: true         # 是否生成内容
-  openapi:              # OpenAPI 3.0 描述文件
-    enable: true          # 默认开启
-    info:                 # OpenAPI 3.0 信息
-      title:                # API 标题
-      description:          # API 描述
-      termsOfService:       # 服务条款
-      contact:              # 联系方式
-        name:                 # 联系人
-        url:                  # 联系地址
-        email:                # 联系邮箱
-      license:              # 许可证
-        name:                 # 许可证名称
-        url:                  # 许可证地址
-      version: "1.0.0"      # API 版本
-    externalDocs:         # OpenAPI 3.0 外部文档
-      description:          # 外部文档描述
-      url:                  # 外部文档地址
-    servers:              # OpenAPI 3.0 服务器
-      - url:                # API 服务器地址
-        description:        # API 服务器描述
+  posts_props:            # 文章列表项的需要生成的属性
+    title: true             # 文章标题
+    date: true              # 发布日期
+    updated: true           # 更新日期
+    comments: true          # 是否允许评论
+    url: true               # 文章链接
+    excerpt: true           # 文章摘要
+    keywords: false         # 关键字
+    cover: true             # 封面图
+    content: false          # 文章内容
+    raw: false              # 原始内容
+    categories: true        # 分类
+    tags: true              # 标签
+  categories:             # 分类数据
+    enable: true            # 默认开启
+    category_generator:     # 默认为 hexo-generator-category 设置
+      per_page: 10            # 每页显示的文章数量
+      order_by: -date         # 排序方式
+  tags: true              # 标签数据
+    enable: true            # 默认开启
+    tag_generator:          # 默认为 hexo-generator-tag 设置
+      per_page: 10            # 每页显示的文章数量
+      order_by: -date         # 排序方式
+  posts:                  # 文章数据
+    enable: true            # 默认开启
+    index_generator:        # 默认为 hexo-generator-index 设置
+      enable: true            # hexo-generator-index 安装则开启
+      per_page: 10            # 每页显示的文章数量
+      order_by: "-date"       # 排序方式
+    archive_generator:      # 默认为 hexo-generator-archive 设置
+      enable: true            # hexo-generator-archive 安装则开启
+      per_page: 10            # 每页显示的文章数量
+      monthly: true           # 是否生成月归档
+      daily: false            # 是否生成日归档
+      order_by: -date         # 排序方式
+  pages: true             # 额外的 Hexo 页面数据, 如 About
+  swipers_list: []        # 生成指定的页面信息,填写你文章文件夹名称比如['css','js']，不加后缀名,主要用于轮播图api
+  search_all:             # 全局搜索
+    enable: true            # 默认开启
+    path: api/search.json   # 默认路径
+    cover: true             # 是否生成封面图
+    excerpt: false          # 是否生成摘要
+    content: true           # 是否生成内容
+  openapi:                # OpenAPI 3.0 描述文件
+    enable: true            # 默认开启
+    path: api/openapi.json  # 默认路径
+    info:                   # OpenAPI 3.0 信息
+      title:                  # API 标题
+      description:            # API 描述
+      termsOfService:         # 服务条款
+      contact:                # 联系方式
+        name:                   # 联系人
+        url:                    # 联系地址
+        email:                  # 联系邮箱
+      license:                # 许可证
+        name:                   # 许可证名称
+        url:                    # 许可证地址
+      version: "1.0.0"        # API 版本
+    externalDocs:           # OpenAPI 3.0 外部文档
+      description:            # 外部文档描述
+      url:                    # 外部文档地址
+    servers:                # OpenAPI 3.0 服务器
+      - url:                  # API 服务器地址
+        description:          # API 服务器描述
 ```
 
 ## Document
-
 | 请求方式 | 请求地址 | 请求详情 |
 |---------|---------|---------|
 Get | `/api/init.json` | 获取所有可用的 API
