@@ -5,6 +5,9 @@
 # hexo-generator-apis
 Generate restful json data for Hexo plugins. Based on [hexo-generator-xapi](https://github.com/bmqy/hexo-generator-xapi)
 
+## Example
+魔法薇ㄦ的书馆 OpenAPI 描述文件 [openapi.json](https://wherewhere.github.io/api/openapi.json)，可前往 [Swagger UI](https://petstore.swagger.io) 在线解析
+
 ## Install
 
 ```sh
@@ -16,12 +19,12 @@ npm install hexo-generator-apis --save
 **加入以下默认配置, 属性值为 `false` 表示不生成**
 
 ```yml
-restful_xapi:         # hexo.config mix theme.config
+restful_xapi:         # 
   enable: true          # 默认开启
-  site: [               # site 可配置为数组选择性生成某些属性
-      "title",          # site: ['title', 'subtitle', 'description', 'author', 'since', email', 'favicon', 'avatar']
-      "subtitle",       # site: true
-      "description",
+  site: [               # hexo.config mix theme.config
+      "title",          # site 可配置为数组选择性生成某些属性
+      "subtitle",       # site: ['title', 'subtitle', 'description', 'author', 'since', email', 'favicon', 'avatar']
+      "description",    # site: true
       "author",
       "language",
       "timezone",
@@ -91,9 +94,6 @@ restful_xapi:         # hexo.config mix theme.config
     servers:              # OpenAPI 3.0 服务器
       - url:                # API 服务器地址
         description:        # API 服务器描述
-    tags:                 # OpenAPI 3.0 标签
-      - name:               # 标签名称
-        description:        # 标签描述
 ```
 
 ## Document
