@@ -6,7 +6,7 @@
 Generate restful json data for Hexo plugins. Based on [hexo-generator-xapi](https://github.com/bmqy/hexo-generator-xapi)
 
 ## Example
-魔法薇ㄦ的书馆 OpenAPI 描述文件 [openapi.json](https://wherewhere.github.io/api/openapi.json)，可前往 [Swagger UI](https://petstore.swagger.io) 在线解析
+魔法薇ㄦ的书馆 OpenAPI 描述文件 [openapi.json](https://wherewhere.github.io/api/openapi.json)，或前往 [Swagger UI](https://wherewhere.github.io/api) 查看 API 文档
 
 ## Install
 ```sh
