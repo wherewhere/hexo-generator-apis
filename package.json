@@ -11,7 +11,7 @@
     "api",
     "openapi"
   ],
-  "homepage": "https://github.com/wherewhere",
+  "homepage": "https://github.com/wherewhere/hexo-generator-apis",
   "bugs": {
     "url": "https://github.com/wherewhere/hexo-generator-apis/issues"
   },
