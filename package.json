@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-apis",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Generate restful json data for Hexo plugins.",
   "main": "index.js",
   "keywords": [
@@ -38,6 +38,5 @@
     "url": "git+https://github.com/wherewhere/hexo-generator-apis.git"
   },
   "dependencies": {
-    "html-to-text": "^9.0.0"
   }
 }

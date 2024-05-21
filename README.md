@@ -31,11 +31,7 @@ restful_xapi:           # RESTful API 配置
       "keywords"
     ]
   posts_props:            # 文章列表项的需要生成的属性
-    title: true             # 文章标题
-    date: true              # 发布日期
-    updated: true           # 更新日期
     comments: true          # 是否允许评论
-    url: true               # 文章链接
     excerpt: true           # 文章摘要
     keywords: false         # 关键字
     cover: true             # 封面图
