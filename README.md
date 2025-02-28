@@ -33,6 +33,8 @@ restful_xapi:           # RESTful API 配置
   posts_props:            # 文章列表项的需要生成的属性
     comments: true          # 是否允许评论
     excerpt: true           # 文章摘要
+    description: false      # 文章描述
+    language: false         # 文章语言
     keywords: false         # 关键字
     cover: true             # 封面图
     content: false          # 文章内容
