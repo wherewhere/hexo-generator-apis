@@ -38,6 +38,9 @@
     "url": "git+https://github.com/wherewhere/hexo-generator-apis.git"
   },
   "dependencies": {
-    "hexo-util": "^3.3.0"
+    "hexo-util": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/hexo": "^3.0.0"
   }
 }
