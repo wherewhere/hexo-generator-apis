@@ -1,6 +1,6 @@
 name: Bug report
 description: Create a report to help us improve
-title: "Bug title"
+title: Bug title
 labels: [bug]
 body:
   - type: textarea
@@ -31,30 +31,30 @@ body:
       label: Package version
       description: Specify the version of hexo-generator-apis you're using.
       options:
-        - "Latest Source"
-        - "1.1.11"
-        - "1.1.10"
-        - "1.1.9"
-        - "1.1.8"
-        - "1.1.7"
-        - "1.1.6"
-        - "1.1.5"
-        - "1.1.4"
-        - "1.1.3"
-        - "1.1.2"
-        - "1.1.1"
-        - "1.1.0"
-        - "Others"
+        - Latest Source
+        - 1.1.11
+        - 1.1.10
+        - 1.1.9
+        - 1.1.8
+        - 1.1.7
+        - 1.1.6
+        - 1.1.5
+        - 1.1.4
+        - 1.1.3
+        - 1.1.2
+        - 1.1.1
+        - 1.1.0
+        - Others
   - type: dropdown
     attributes:
       label: Platform type
       description: Please specify the platform you're using when you encountered the issue.
       multiple: true
       options:
-        - "Windows"
-        - "Linux"
-        - "MacOS"
-        - "Others"
+        - Windows
+        - Linux
+        - MacOS
+        - Others
   - type: textarea
     attributes:
       label: System version
