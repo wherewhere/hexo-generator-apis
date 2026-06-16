@@ -1,11 +1,11 @@
 {
   "name": "hexo-generator-apis",
-  "version": "1.2.13",
+  "version": "1.2.14",
   "description": "Generate restful json data for Hexo plugins.",
   "main": "index.js",
   "bin": {
-    "hexo-generator-apis": "main.js",
-    "hga": "main.js"
+    "hexo-generator-apis": "main.mjs",
+    "hga": "main.mjs"
   },
   "keywords": [
     "hexo",
@@ -42,6 +42,8 @@
     "url": "git+https://github.com/wherewhere/hexo-generator-apis.git"
   },
   "dependencies": {
+    "@cfworker/json-schema": "^4.0.0",
+    "@modelcontextprotocol/server": "^2.0.0-alpha.2",
     "hexo-util": "^4.0.0"
   },
   "devDependencies": {
