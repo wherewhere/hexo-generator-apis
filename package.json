@@ -42,12 +42,11 @@
     "url": "git+https://github.com/wherewhere/hexo-generator-apis.git"
   },
   "dependencies": {
-    "@cfworker/json-schema": "^4.0.0",
-    "@modelcontextprotocol/server": "^2.0.0-alpha.2",
+    "@modelcontextprotocol/server": "2.0.0-alpha.3",
     "hexo-util": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "^25.0.0",
+    "@types/node": "^26.0.0",
     "hexo": "^8.0.0"
   }
 }

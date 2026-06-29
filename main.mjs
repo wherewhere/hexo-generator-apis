@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 
-import { StdioServerTransport } from "@modelcontextprotocol/server";
+import { StdioServerTransport } from "@modelcontextprotocol/server/stdio";
 import { createMcp, fetchWithTimeout } from "./lib/mcp.mjs";
 import _package from "./package.json" with { type: "json" };
 
